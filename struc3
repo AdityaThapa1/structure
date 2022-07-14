@@ -1,0 +1,34 @@
+#include<stdio.h>
+struct employee{
+	int employee_id;
+	char name[50];
+	char gender;
+	float salary;
+};
+int main(){
+	struct employee em[4];
+	int n;
+	for (n=0;n<4;n++)
+	{
+	
+	printf("emter the id of employee");
+	scanf("%d%*c",&em[n].employee_id);
+	printf("enter ermployee name");
+	gets(em[n].name);
+	printf("emter the gender of employee");
+	scanf("%c",&em[n].gender);
+	printf("emter the salary of employee");
+	scanf("%f",&em[n].salary);
+	
+	}
+	for (n=0;n<4;n++)
+	{
+	printf("the employee id of employees is %d \n",em[n].employee_id);
+	printf("the name of employee is  \n");
+	puts(em[n].name);
+	printf("the gender of employees is %c \n",em[n].gender);
+	printf("the salary of employees is %f\n",em[n].salary);
+}
+	return 0;
+}
+	
