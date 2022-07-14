@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct employee{
+	int employee_id;
+	char name[50];
+	char gender;
+	float salary;
+};
+int main(){
+	struct employee em;
+	printf("emter the id of employee");
+	scanf("%d%*c",&em.employee_id);
+	printf("enter ermployee name");
+	gets(em.name);
+	printf("emter the gender of employee");
+	scanf("%c",&em.gender);
+	printf("emter the salary of employee");
+	scanf("%f",&em.salary);
+	printf("the employee id of employees is %d \n",em.employee_id);
+	printf("the name of employee is  \n");
+	puts(em.name);
+	printf("the gender of employees is %c \n",em.gender);
+	printf("the salary of employees is %f\n",em.salary);
+	return 0;
+}
+	
